@@ -28,7 +28,7 @@ console.log(jogador1.nome, jogador1.idade, jogador1.copaDoMundo, jogador1.país)
 /* Dessa maneira é possível escolher cada informação do jogador através do DOM. */
 
 /* Exemplo 3
-Criando uma função que permite adicionar as informações ao objeto de uma maneira padronizada. */
+Criando uma função que permite criar varios objetos com os mesmos tipos de informações. */
 
 function JogadorInfo(nome, idade, copaDoMundo, país) {
   (this.nome = nome),
