@@ -22,7 +22,7 @@ let func03 = (a, b) => a + b;
 
 console.log(func03(1, 2));
 /* Ao fazer a arrow function dessa maneira
-o parâmetro fica implícito e não é necessário defini-lo. */
+o return fica implícito e não é necessário defini-lo. */
 
 //Ex 04: arrow function com um parâmetro.
 
