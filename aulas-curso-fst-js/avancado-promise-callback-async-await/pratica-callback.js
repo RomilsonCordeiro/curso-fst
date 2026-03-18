@@ -54,7 +54,7 @@ function cronometro() {
     console.log(`${min}:${sec}`);
     if (sec === "20") {
       clearInterval(timer);
-      console.log("KABOOOOOOOOMMMMM!!!");
+      console.log("KABOOOOOOOOOM!!!");
     }
   }, 1000);
 }

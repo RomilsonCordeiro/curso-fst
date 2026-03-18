@@ -11,9 +11,9 @@ renomear e excluir arquivos e diretórios.*/
 
 console.log(1);
 
-/*fs.readFile("msg1.txt", (err, contents) => {
+fs.readFile("msg1.txt", (err, contents) => {
   console.log(String(contents));
-});*/
+});
 /*Aqui está o 'Callback'.
  Primeiro o arquivo que será lido('msg1.txt')
 depois os parâmetros(Callback sempre tem dois parâmetros)
@@ -30,27 +30,3 @@ após os três 'console.log'.*/
 
 console.log(2);
 console.log(3);
-
-//Promise:
-/*Promisse permite tratar dados sem bloquear a execução do código
-retornando um objeto que pode estar pendente, realizado ou rejeitado.*/
-
-const readFile = (file) =>
-  new Promise((resolve, reject) => {
-    fs.readFile(file, (err, contents) => {
-      if (err) {
-        reject(err);
-      } else {
-        resolve(contents);
-      }
-    });
-  });
-
-readFile("msg1.txt")
-  .then((contents) => {
-    console.log(String(contents));
-    return readFile("msg2.txt");
-  })
-  .then((contents) => {
-    console.log(String(contents));
-  });
